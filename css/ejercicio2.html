@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        p{
+            /*Todas las etiquetas P*/
+            color: chocolate;
+        }
+        body p{
+    /* todos los parrafos que esten dentro del body*/
+            color: red;
+        }
+    
+
+        body>p{
+            /*Todos los parrafos que esten directamente dentro de una casilla*/
+            color: red;
+        }
+        table+p{
+            /*El P que justo esta después de una tabla.*/
+            /*Esto solo afecta al P que va despues de una tabla.*/
+            color: blue;
+        }
+        table~p{
+            /*Todos los parrafos que van después de la tabla*/
+            color: coral;
+        }
+
+        a{
+            text-decoration:none;
+        }
+        a:link{
+            /*Cambia los A con link*/
+            color: blue;
+
+        }
+        a:visited{
+            /*Se aplica a los A con enlaces visitados*/
+            color: black;
+        }
+        a:hover{
+            /*Pasar el cursor sobre una A cambia de color.*/
+            color: aqua;
+        }
+
+        a:active{
+            color:blueviolet;
+            
+        }
+    </style>
+        
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non nibh risus. Ut cursus sem erat, et luctus urna molestie a. Etiam vehicula diam id odio sollicitudin, ac tempor enim mattis. Donec pretium, odio id auctor lacinia, nibh eros efficitur nulla, accumsan rhoncus felis mi eu arcu. Etiam porta metus at tortor ultrices egestas. Mauris vel neque condimentum, varius turpis ut, blandit erat. Donec tincidunt facilisis justo non rutrum.</p>
+
+    <table>
+        <tr>
+            <td>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non nibh risus. Ut cursus sem erat, et luctus urna molestie a. Etiam vehicula diam id odio sollicitudin, ac tempor enim mattis. Donec pretium, odio id auctor lacinia, nibh eros efficitur nulla, accumsan rhoncus felis mi eu arcu. Etiam porta metus at tortor ultrices egestas. Mauris vel neque condimentum, varius turpis ut, blandit erat. Donec tincidunt facilisis justo non rutrum.</p>
+                <p><a href="https://www.google.com">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a> Morbi non nibh risus. Ut cursus sem erat, et luctus urna molestie a. Etiam vehicula diam id odio sollicitudin, ac tempor enim mattis. Donec pretium, odio id auctor lacinia, nibh eros efficitur nulla, accumsan rhoncus felis mi eu arcu. Etiam porta metus at tortor ultrices egestas. Mauris vel neque condimentum, varius turpis ut, blandit erat. Donec tincidunt facilisis justo non rutrum.</p>
+            </td>
+        </tr>
+    </table>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non nibh risus. Ut cursus sem erat, et luctus urna molestie a. Etiam vehicula diam id odio sollicitudin, ac tempor enim mattis. Donec pretium, odio id auctor lacinia, nibh eros efficitur nulla, accumsan rhoncus felis mi eu arcu. Etiam porta metus at tortor ultrices egestas. Mauris vel neque condimentum, varius turpis ut, blandit erat. Donec tincidunt facilisis justo non rutrum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non nibh risus. Ut cursus sem erat, et luctus urna molestie a. Etiam vehicula diam id odio sollicitudin, ac tempor enim mattis. Donec pretium, odio id auctor lacinia, nibh eros efficitur nulla, accumsan rhoncus felis mi eu arcu. Etiam porta metus at tortor ultrices egestas. Mauris vel neque condimentum, varius turpis ut, blandit erat. Donec tincidunt facilisis justo non rutrum.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="https://www.facebook.com">Morbi non nibh risus. Ut cursus sem erat, et luctus urna molestie a. Etiam vehicula diam id odio sollicitudin, ac tempor enim mattis. Donec pretium, odio id auctor lacinia, nibh eros efficitur nulla, accumsan rhoncus felis mi eu arcu. Etiam porta metus at tortor ultrices egestas. Mauris vel neque condimentum, varius turpis ut, blandit erat. Donec tincidunt facilisis justo non rutrum.</a> </p>
+</body>
+</html>
