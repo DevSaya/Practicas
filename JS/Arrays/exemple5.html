@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        var jugadores = ["MESSI", "INIESTA", "PUYOL", "XAVI", "ETOO", "TOURE YAYA", "CR7"];
+        function addNewPlayer() {
+
+            var jugador = document.getElementById("jugador").value;
+            jugadores.push(jugador);
+            for (var i = 0; i < jugadores.length; i++) {
+
+
+                document.write(jugadores[i] + " <br>");
+            }
+
+        }
+    </script>
+    <input type="text" id="jugador">
+    <input type="button" value="Añadir nuevo jugador" onclick="addNewPlayer()">
+</body>
+
+</html>

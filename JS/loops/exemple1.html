@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function factorial() {
+            var factoria = 10;
+            var i = 10;
+            while (i > 0) {
+          
+                    factoria = i * factoria;
+                
+
+                document.write(factoria + " <br>");
+                console.log(factoria);
+                i--;
+            }
+        }
+
+
+
+        var x = 0, y = 1;
+        var count = 2;
+        var fib;
+        while (count++ <= 20000) {
+            var fib = x + y;
+            x = y;
+            y = fib;
+            document.write(fib + " <br>");
+        }
+        
+        console.log(fib);
+    </script>
+</body>
+
+</html>

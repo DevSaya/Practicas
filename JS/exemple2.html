@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script language="javascript">
+
+        var  iterator = 1024;
+            function count(){
+                
+
+                if(iterator>8000){
+                    window.alert(iterator+" es el valor maximo");
+                    return;
+                }else {
+                    iterator = iterator*2;
+                }
+
+            document.getElementById("valor").value=iterator;
+               
+            }
+
+            function mostrar(){
+                
+                if(iterator<1){
+                    window.alert(iterator+" es el valor maximo");
+                    return;
+                }else {
+                    iterator = iterator/2;
+                }
+
+            document.getElementById("valor").value=iterator;
+            }
+        </script>
+
+        <input  id="valor" type="text" value="">
+
+        <input type="button" value="Sumar" onclick="count()">
+        <input type="button" value="Dividir" onclick="mostrar()">
+    </body>
+</html>

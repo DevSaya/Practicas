@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+
+    <div id="list">
+
+    </div>
+
+    <script language="javascript">
+        window.onload = function () {
+            iceCream();
+        };
+        function iceCream() {
+            var imgs = [['https://2.bp.blogspot.com/-mxIffv1UFnE/VYg-6AXLVVI/AAAAAAAASrQ/SeGEEiHch6s/s1600/Desktop375.jpg',
+                'https://m.media-amazon.com/images/S/aplus-media/vc/784f8e9e-d693-4af6-84bb-a65fbcd4c1ee.__CR0,242,2848,2848_PT0_SX300_V1___.jpg',
+                'https://www.heladeras.es/wp-content/uploads/2020/07/receta-de-helado-de-fresa-casero_low.jpg'],
+            ['https://image.freepik.com/foto-gratis/cono-pequeno-crujiente-helado-mesa_23-2148177334.jpg',
+                'https://helados.pro/wp-content/uploads/2018/11/Receta_Snippet.jpg',
+                'https://www.hola.com/imagenes/cocina/escuela/2012081760251/helado-chocolate-casero/0-213-9/helado_choco_-z.jpg'],
+            ['https://www.recetin.com/wp-content/uploads/2012/05/helados_limon.jpg', 
+        'https://okdiario.com/img/2019/06/28/helado-de-yogur-con-limon.jpg', 
+    'https://i2.wp.com/www.deliciopolis.com/wp-content/uploads/2019/01/735106.jpg?fit=1200%2C800&ssl=1']];
+
+            var helado = document.getElementById("helado").selectedIndex;
+            var tamanyo = document.getElementById("tamanyo").selectedIndex;
+
+
+            document.getElementById("image").src = imgs[helado][tamanyo];
+
+        }
+
+    </script>
+
+    <h1>HELADOS</h1>
+    <div class="row">
+        <div class="col-xl-3 col-lg-4">
+            <div>
+                <select id="helado" onchange="iceCream()">
+
+                    <option value="1">Helado de fresa</option>
+                    <option value="2">Helado de chocolate</option>
+                    <option value="3">Helado de limon</option>
+                </select>
+                <br>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+            <div>
+                <select id="tamanyo" onchange="iceCream()">
+
+                    <option value="1">PEQUEÑO</option>
+                    <option value="2">MEDIANO</option>
+                    <option value="3">GRANDE</option>
+                </select>
+                <br>
+            
+            </div>
+        </div>
+        <img src="" height="250px" width="250px" id="image">
+    </div>
+</body>
+
+</html>

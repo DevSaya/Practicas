@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <style>
+img{
+    width: 150px;
+    weight: 150px;
+            
+        }
+        </style>
+        
+    </head>
+    <script>
+        function loadPage(){
+            var fotos = ["https://plantasyflores.online/wp-content/uploads/2017/08/sunflower-1627193_1920-copia.jpg",
+         "https://plantasyflores.online/wp-content/uploads/2017/08/sunflower-1627193_1920-copia.jpg", 
+         "https://plantasyflores.online/wp-content/uploads/2017/08/sunflower-1627193_1920-copia.jpg"];
+
+
+
+
+        for(var i=0; i<fotos.length; i++){
+        
+            switch(i){
+                case 0:
+                document.getElementById("capa0").innerHTML = "<img src="+'"'+fotos[i]+'"'+">";
+                break;
+                case 1:
+                document.getElementById("capa1").innerHTML = "<img src="+'"'+fotos[i]+'"'+">";
+                break;
+                case 2:
+                document.getElementById("capa2").innerHTML = "<img src="+'"'+fotos[i]+'"'+">";
+                break;
+                
+            }
+        }
+
+        }
+        
+    </script>
+
+    <input type="button" value="Load" onclick="loadPage()">
+<div id="capa0">
+
+</div>
+<div id="capa1">
+    
+</div>
+<div id="capa2">
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <link rel="stylesheet" type="text/css" href="suneffect.css">
+    <link rel="stylesheet" type="text/css" href="snoweffect.css">
+
+
+    <div id="capa">
+
+        <form>
+            <label for="fname">Temperatura:</label>
+            <input type="number" id="temp" name="fname"><br><br>
+            <input type="button" value="Comprobar" onclick="comprobarTemp()">
+        </form>
+    </div>
+
+    <div id="div_id" class="sun">
+        <div class="ray_box">
+            <div class="ray ray1"></div>
+            <div class="ray ray2"></div>
+            <div class="ray ray3"></div>
+            <div class="ray ray4"></div>
+            <div class="ray ray5"></div>
+            <div class="ray ray6"></div>
+            <div class="ray ray7"></div>
+            <div class="ray ray8"></div>
+            <div class="ray ray9"></div>
+            <div class="ray ray10"></div>
+            <div class="ray ray9"></div>
+
+        </div>
+    </div>
+
+
+    <script language="javascript">
+        function comprobarTemp() {
+            var temp = document.getElementById("temp").value;
+
+            if (temp > 16) {
+                hideSnow();
+            } else {
+                hideSun();
+            }
+        }
+
+        function hideSnow(){
+            var x = document.getElementById("div_id");
+            x.style.display = "block";
+            reStyle(0);
+            hidesnow();
+        }
+
+        function hideSun() {
+            var x = document.getElementById("div_id");
+            x.style.display = "none";
+            snowIE_NS6();
+            reStyle(1);
+        }
+    </script>
+    <script src="snowJS.js"></script>
+    <script src="loadAnotherCss.js"></script>
+</body>
+
+</html>

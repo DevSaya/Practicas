@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+
+        var questions = ["¿Cuál es la parte más profunda de la corteza terrestre?", "¿Cuál es la capital de Marruecos?", "¿En qué país se encuentra el río Po?", "¿Cuál es el país más visitado del mundo?",
+            "¿En qué países es oficial el quechua es lengua oficial nacional?",
+            "¿En qué país se encuentra la península de Yucatán?", "¿Cuál es el océano que baña las aguas de Sri Lanka?", "¿Cuál es la montaña más alta del mundo?",
+            " ¿Qué nombre recibe un cowboy argentino?", "¿A qué dos continentes se debe la existencia del vudú?"];
+
+        var answers = ["La fosa de las Marianas", "Rabat", "Italia", "Francia",
+            "Perú", "Ecuador y Bolivia", "México", "El Índico", "Everest", "Gaucho", "A África y América"];
+
+        window.onload = function () {
+            nextQuestion();
+        };
+
+        var i = 0;
+        function nextQuestion() {
+            document.getElementById("pregunta").value = questions[i];
+        }
+
+        function corregir() {
+            var respuesta = document.getElementById("respuesta").value;
+            if (answers[i] == respuesta) {
+                window.alert("YES");
+                i++;
+                document.getElementById("respuesta").value = "";
+                nextQuestion();
+            } else {
+                window.alert("NO");
+            }
+        }
+    </script>
+
+    <div>
+        <output type="text" id="pregunta">
+            
+    </div>
+    <input type="text" id="respuesta">
+            <input type="button" value="Corregir" onclick="corregir()">
+
+</body>
+
+</html>

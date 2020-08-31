@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    </head>
+
+    <div id="list">
+
+    </div>
+
+    <script language="javascript">
+        window.onload = function () {
+            plato1();
+            plato2();
+            plato3();
+        };
+        function plato1() {
+            var imgs = ['https://www.maximocallejo.es/wp-content/uploads/2019/03/preparadopaella-e1579780212868.jpg',
+                'https://www.cucute.com/media/catalog/product/t/a/tajine-27-cm-cereza---hierro-fundido---le-creuset.jpg1_1.jpg',
+                'https://1.bp.blogspot.com/-Vrxb2-A9kyE/UcRWitU_PfI/AAAAAAAAEKw/LFjH1ZP_5rA/s1600/BT+2013+Amanida+de+l%27hort+.jpg',
+                'https://images.media-allrecipes.com/userphotos/250x250/978041.jpg'];
+
+            var i = document.getElementById("plato_1").selectedIndex;
+
+            document.getElementById("image_p1").src = imgs[i];
+
+        }
+
+        function plato2() {
+            var imgs = ['https://www.maximocallejo.es/wp-content/uploads/2019/03/preparadopaella-e1579780212868.jpg',
+                'https://www.cucute.com/media/catalog/product/t/a/tajine-27-cm-cereza---hierro-fundido---le-creuset.jpg1_1.jpg',
+                'https://i.pinimg.com/originals/38/6d/1c/386d1cf11b8360b9a461fbd468b98caf.jpg',
+                'https://images.media-allrecipes.com/userphotos/250x250/978041.jpg'];
+
+            var i = document.getElementById("plato_2").selectedIndex;
+
+            document.getElementById("image_p2").src = imgs[i];
+        }
+
+        function plato3() {
+            var imgs = ['https://www.maximocallejo.es/wp-content/uploads/2019/03/preparadopaella-e1579780212868.jpg',
+                'https://www.cucute.com/media/catalog/product/t/a/tajine-27-cm-cereza---hierro-fundido---le-creuset.jpg1_1.jpg',
+                'https://i.pinimg.com/originals/38/6d/1c/386d1cf11b8360b9a461fbd468b98caf.jpg',
+                'https://images.media-allrecipes.com/userphotos/250x250/978041.jpg'];
+
+            var i = document.getElementById("plato_3").selectedIndex;
+
+            document.getElementById("image_p3").src = imgs[i];
+        }
+
+    </script>
+
+
+    <div class="row">
+        <div class="col-xl-3 col-lg-4">
+            <div>
+                <select id="plato_1" onchange="plato1()">
+
+                    <option value="1">Paella</option>
+                    <option value="2">Tajin</option>
+                    <option value="3">Ensalada</option>
+                    <option value="4">Arroz con pollo</option>
+                </select>
+                <br>
+                <div>
+                    <img id="image_p1" height="250px" width="250px" src="">
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-3 col-lg-4">
+            <div>
+                <select id="plato_2" onchange="plato2()">
+
+                    <option value="1">Paella</option>
+                    <option value="2">Tajin</option>
+                    <option value="3">Helado de fresa</option>
+                    <option value="4">Arroz con pollo</option>
+                </select>
+                <br>
+                <div>
+                    <img id="image_p2" height="250px" width="250px" src="">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-3 col-lg-4">
+            <div>
+                <select id="plato_3" onchange="plato3()">
+                    <option value="1">Paella</option>
+                    <option value="2">Tajin</option>
+                    <option value="3">Helado de fresa</option>
+                    <option value="4">Arroz con pollo</option>
+                </select>
+                <br>
+                <div>
+                    <img id="image_p3" height="250px" width="250px" src="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

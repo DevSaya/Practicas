@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <label>NOM</label>
+    <input type="password" id="user_name">
+    <input type="number" id="edad">
+    <input type="button" value="Check name" onclick="checkName();">
+    <script language="javascript">
+
+        function checkName() {
+            var name = document.getElementById("user_name").value;
+
+            var edad = parseInt(document.getElementById("edad").value);
+
+            if (name == "mustafa" && edad > 17) {
+                window.alert("HELLO " + name)
+            } else {
+                window.alert("Error")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

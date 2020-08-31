@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div>
+            
+        </div>
+        <input type="button" value="Get current date" onclick="getCurrentDate()">
+        <script language="javascript">
+            function getCurrentDate(){
+                var meses = ["ENERO", "FEBRERO", "MARZO", "ABRIL", "MAYO", "JUNIO", "JULIO", "AGOSTO", "SEPTIEMBRE", 
+            "OCTOBRE", "NOVIEMBRE", "DICIEMBRE"];
+            var dias = ["DOMINGO", "LUNES", "MARTES", "MIERCOLES", "JUEVES", "VIERNES", "SABADO"];
+
+            var date = new Date();
+            var dia = date.getDay();
+            var mes = date.getMonth();
+            var anyo = date.getFullYear();
+            var numDiaMes = date.getDate();
+    
+
+            window.alert("HOY ES "+dias[dia]+" "+numDiaMes+" DE "+meses[mes]+" DE "+anyo);
+            }
+             
+        </script>
+    </body>
+</html>
